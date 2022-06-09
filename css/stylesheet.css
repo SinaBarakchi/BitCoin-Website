@@ -1,0 +1,485 @@
+*{
+    margin: 0  auto;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.bar-button{
+    margin: auto auto;
+    display: none;
+}
+.font-20{
+    font-size: 20px;
+}
+b{
+    font-weight: 700;
+    transition: all .2s;
+}
+b:hover{
+    color: #F9B500;
+}
+a{
+    text-decoration: none;
+    transition: all .2s;
+}
+a:hover{
+    color: #F9B500;
+}
+
+.info_list li i{
+    color: #F9B500;
+}
+section{
+    display: block;
+}
+.section1{
+    /* margin: 10px; */
+    width: 1200px;
+}
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    /* text-align: right; */
+    
+}
+/* li{
+   
+} */
+.nav_list{
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 0; */
+}
+.nav_items{
+    margin : 1rem;
+    font-weight: 700;
+    padding: 15px 5px 15px 0px;
+}
+.left_item{
+    margin-right: auto;
+    margin-left: 0px;
+}
+.show {
+    display: inline-block;
+}
+/*__________________________________END OF NAVBAR______________________________________*/
+.news_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 10px;
+}
+.news{
+    /* width: clac(clac( 100% / 3 ) - 10px); */
+    /* height: 100%; */
+    background-size: cover;
+    background-position: center;
+}
+.first_new h3{
+    font-size: 25px !important;
+}
+.news h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+.first_new{
+    width: 100%;
+    background-image: url('../images/slider-1-1200x900.jpg');
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.news:before{
+    background-color: rgba(0, 0, 0, .4);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+  }
+.second_new{
+    background-image: url("../images/slider-2-450x600.jpg");
+    /* background-color: gray; */
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.third_new{
+    background-image: url("../images/slider-3-450x600.jpg");
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.forth_new{
+    background-image: url("../images/slider-4-450x600.jpg");        
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.fifth_new{
+    background-image: url("../images/slider-5-450x600.jpg");
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.sixth_new{
+    background-image: url("../images/slider-6-450x600.jpg");
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.first_new_note{
+    position: absolute;
+    bottom: 0.5em;
+    margin: 0 20px;
+}
+.second_new_note{
+    position: absolute;
+    bottom: 0.5em;
+    margin: 0 20px;
+}
+h3{
+    /* font-weight: 800; */
+    color: #ffffff;
+    /* margin-bottom: 20px; */
+}
+.yellow_text{
+    color: #F9B500;
+}
+.white li{
+  color:#ffffff;
+}
+
+.info_list{
+    /* color: #ffffff; */
+    display: inline-block;
+    margin: 12px 0;
+    
+}
+.info_list li{
+    display: inline;
+    /* margin: 5px 5px; */
+    padding-right: 20px;
+    /* color: #ffffff; */
+    line-height: 25px;
+}
+.bigNews{
+    font-size: 25px;
+}
+/*  __________________________________________END OF HEADER\____________________________________________________________ */
+.grid-container2{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.6fr 0.9fr 0.34fr 0.5fr;
+    grid-template-areas: "recentnews bitcoin-prize"
+                         "recentnews popularposts"   
+                         "minningnews popularposts"
+                         "minningnews newsletter";
+    column-gap: 50px;    
+    /* margin-top: 20px; */
+}
+.title::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 80px;
+    content: '';
+   background-color: #F9B500;
+}
+.title{
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 40px ;
+}
+.title::after{
+    /* z-index: 1; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    background:#ccc;
+    /* padding-bottom: 30px; */
+}
+.recent-news{
+   width: 100%;
+   grid-area: recentnews;
+    
+}
+.recent-news img{
+    margin-bottom: 20px ;
+    width: 100%;
+}
+.article-title a{
+    font-weight: 700;
+}
+.recent-news p{
+    margin-top: 10px;
+}
+.bitcoin-prize{
+    /* background-color: aqua; */
+    width: 100%;
+    height: fit-content;
+    grid-area: bitcoin-prize;
+}
+.bitcoin-prize ul li {
+    /* width: 90%; */
+    /* display: list-item; */
+    background-color: #F9B500;
+    margin: 1px;
+    text-align: center;
+    padding:15px 45px ;
+    font-weight: 700;
+}
+.sidebar-items{
+    grid-area: popularposts;
+    width: 100%;
+}
+.popular-posts{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.popular-posts img{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.popular-posts-title{
+   margin-left: 120px;
+}
+.popular-posts-title h3 a b{
+    font-size: 18px;
+}
+.minningnews{
+    width: 100%;
+    margin-top: 20px;
+    grid-area: minningnews;
+}
+.minningnews section img{
+   width: 95%;
+   height: 100%;
+
+}
+.newsletter{
+    grid-area: newsletter;
+}
+.w-1-2{
+    width: calc(calc(100% / 2) - 2px);
+    display: inline-block;
+    
+}
+.relative-pos{
+    position: relative;
+    margin: 0 !important;
+    
+}
+.absolute-pos{
+    position: absolute;
+    top: 0px;
+}
+.clear-fix{
+    clear: both;
+}
+
+.next-line::before{
+ content: "\a";
+ white-space: pre;
+}
+
+.posts{
+    margin-bottom: 25px;
+}
+.newsletter{
+    width: 100%;
+}
+.subscribe-area{
+    float: left;
+    border: 1px solid #F9B500;
+    /* border-bottom: #F9B500; */
+    height: 40px;
+    width: calc(100% - 3px);
+    margin-top: 20px;
+    padding: 0;
+}
+.subscribe-area:focus{
+    outline-color: #F9B500;
+}
+.subscribe-button{
+    float: right;
+    width: 45px;   
+    height: 42px; 
+    margin-top: -42px;
+    background-color: #F9B500;
+    border: none;
+}
+.subscribe-button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* _________________________footer_______________________ */
+footer{
+    background-color: #191919;
+    width: 100%;
+}
+.bg-mp{
+    background-image: url(../images/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.app{
+    width: 1200px;
+}
+.first-footer-row{
+    padding-top: 30px;
+    background-color: rgba(25, 25, 25, .9);
+    width: 100%;
+    overflow: hidden;
+    /* padding-bottom: 20px; */
+}
+.footer-title{
+    padding-bottom: 30px;
+}
+footer p{
+    line-height: 28px;
+    color: #cccccc;
+    font-size: 16px;
+}
+.footer-cols{
+    padding-bottom: 10px;
+    float: left;
+    margin-right: 20px;
+    width: calc(calc(100% / 3) - 25px);
+}
+footer h3{
+    margin-bottom: 30px;
+}
+footer a{
+    color: #cccccc;
+
+}
+.most-popular p {
+    font-size: 14px !important;
+    padding-top: 15px;
+}
+.br{
+    height: 1px;
+    background-color: rgba(170, 170, 170, .2);
+    margin: 15px 0;
+}
+.footer-link-list{
+    padding-bottom: 20px;
+}
+.footer-link-list li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-link-list li a{
+    color: #cccccc;
+    font-size: 12px;
+}
+.second-footer-row{
+    background-color: rgba(25, 25, 25, .9) ;
+    padding-top: 10px;
+}
+.footer-contact-icons{
+    float: right;
+    padding-bottom: 20px;
+}
+.footer-contact-icons li{
+    display: inline;
+    padding-right: 20px;
+}
+.hover-yellow a:hover{
+    color: #F9B500;
+  
+}
+
+.show{
+    display: inline-block !important;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width : 767.98px){
+    
+    
+    .bar-button{
+        display: block;
+        margin: 25px;
+    }
+    .nav_list{
+        display: none;
+        width: 100%;
+    }
+    /* ...................................................... */
+    .news_container{
+        grid-template-columns: 1fr !important;
+    }
+    .news{
+        width: calc(100% - 60px);
+        height: 300px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .first_new{
+        grid-column: auto !important;
+        grid-row:  auto !important;
+    }
+    .left_item{
+        margin-left: 30px;
+    }
+/* ............................................................ */
+    .grid-container2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1150px 320px 600px 700px 300px;
+        grid-template-areas: "recentnews"
+                            "bitcoin-prize" 
+                            "popularposts"
+                             "minningnews"
+                             "newsletter";
+    }
+    .bitcoin-prize{
+        margin-bottom: 30px;
+    }
+    
+    .middle-container-items{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;   
+        height: auto;
+        max-height: 600px;
+
+
+    }
+    
+}
+@media (max-width  :  597.98px){
+    .w-1-2{
+        display: block;
+    }
+    .grid-container2{
+        grid-template-rows: 1150px 320px 600px 1100px 300px;
+        grid-template-areas: "recentnews"
+                            "bitcoin-prize" 
+                            "popularposts"
+                             "minningnews"
+                             "newsletter";
+    }
+    /* _______________________ */
+    .footer-cols{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
